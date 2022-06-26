@@ -1,0 +1,131 @@
+hch@localhost test % node test
+----------------------------------------------------------------------------------------------------
+Output under option 'simple' is:
+{
+  NumOfUniqIP: 11,
+  Top3ActIPs: [ '168.41.191.40', '177.71.128.21', '50.112.00.11' ],
+  Top3VisitURL: [
+    '/docs/manage-websites/',
+    '/intranet-analytics/',
+    'http://example.net/faq/'
+  ]
+}
+----------------------------------------------------------------------------------------------------
+Details:
+[
+  [
+    { item: '168.41.191.40', frequency: 4 },
+    { item: '177.71.128.21', frequency: 3 },
+    { item: '50.112.00.11', frequency: 3 },
+    { item: '72.44.32.10', frequency: 3 },
+    { item: '168.41.191.9', frequency: 2 },
+    { item: '168.41.191.34', frequency: 2 },
+    { item: '168.41.191.43', frequency: 2 },
+    { item: '168.41.191.41', frequency: 1 },
+    { item: '50.112.00.28', frequency: 1 },
+    { item: '72.44.32.11', frequency: 1 },
+    { item: '79.125.00.21', frequency: 1 }
+  ],
+  [
+    { item: '/docs/manage-websites/', frequency: 2 },
+    { item: '/intranet-analytics/', frequency: 1 },
+    { item: 'http://example.net/faq/', frequency: 1 },
+    { item: '/this/page/does/not/exist/', frequency: 1 },
+    { item: 'http://example.net/blog/category/meta/', frequency: 1 },
+    {
+      item: '/blog/2018/08/survey-your-opinion-matters/',
+      frequency: 1
+    },
+    { item: '/docs/manage-users/', frequency: 1 },
+    { item: '/blog/category/community/', frequency: 1 },
+    { item: '/faq/', frequency: 1 },
+    { item: '/faq/how-to-install/', frequency: 1 },
+    { item: '/asset.js', frequency: 1 },
+    { item: '/to-an-error', frequency: 1 },
+    { item: '/', frequency: 1 },
+    { item: '/docs/', frequency: 1 },
+    { item: '/moved-permanently', frequency: 1 },
+    { item: '/temp-redirect', frequency: 1 },
+    { item: '/faq/how-to/', frequency: 1 },
+    { item: '/translations/', frequency: 1 },
+    { item: '/newsletter/', frequency: 1 },
+    { item: '/hosting/', frequency: 1 },
+    { item: '/download/counter/', frequency: 1 },
+    { item: '/asset.css', frequency: 1 }
+  ]
+]
+----------------------------------------------------------------------------------------------------
+Output under option 'precise' is:
+{
+  NumOfUniqIP: 11,
+  Top3ActIPs: [ '168.41.191.40', '177.71.128.21', '50.112.00.11', '72.44.32.10' ],
+  Top3VisitURL: [
+    '/docs/manage-websites/',
+    '/intranet-analytics/',
+    'http://example.net/faq/',
+    '/this/page/does/not/exist/',
+    'http://example.net/blog/category/meta/',
+    '/blog/2018/08/survey-your-opinion-matters/',
+    '/docs/manage-users/',
+    '/blog/category/community/',
+    '/faq/',
+    '/faq/how-to-install/',
+    '/asset.js',
+    '/to-an-error',
+    '/',
+    '/docs/',
+    '/moved-permanently',
+    '/temp-redirect',
+    '/faq/how-to/',
+    '/translations/',
+    '/newsletter/',
+    '/hosting/',
+    '/download/counter/',
+    '/asset.css'
+  ]
+}
+----------------------------------------------------------------------------------------------------
+Details:
+[
+  [
+    { item: '168.41.191.40', frequency: 4 },
+    { item: '177.71.128.21', frequency: 3 },
+    { item: '50.112.00.11', frequency: 3 },
+    { item: '72.44.32.10', frequency: 3 },
+    { item: '168.41.191.9', frequency: 2 },
+    { item: '168.41.191.34', frequency: 2 },
+    { item: '168.41.191.43', frequency: 2 },
+    { item: '168.41.191.41', frequency: 1 },
+    { item: '50.112.00.28', frequency: 1 },
+    { item: '72.44.32.11', frequency: 1 },
+    { item: '79.125.00.21', frequency: 1 }
+  ],
+  [
+    { item: '/docs/manage-websites/', frequency: 2 },
+    { item: '/intranet-analytics/', frequency: 1 },
+    { item: 'http://example.net/faq/', frequency: 1 },
+    { item: '/this/page/does/not/exist/', frequency: 1 },
+    { item: 'http://example.net/blog/category/meta/', frequency: 1 },
+    {
+      item: '/blog/2018/08/survey-your-opinion-matters/',
+      frequency: 1
+    },
+    { item: '/docs/manage-users/', frequency: 1 },
+    { item: '/blog/category/community/', frequency: 1 },
+    { item: '/faq/', frequency: 1 },
+    { item: '/faq/how-to-install/', frequency: 1 },
+    { item: '/asset.js', frequency: 1 },
+    { item: '/to-an-error', frequency: 1 },
+    { item: '/', frequency: 1 },
+    { item: '/docs/', frequency: 1 },
+    { item: '/moved-permanently', frequency: 1 },
+    { item: '/temp-redirect', frequency: 1 },
+    { item: '/faq/how-to/', frequency: 1 },
+    { item: '/translations/', frequency: 1 },
+    { item: '/newsletter/', frequency: 1 },
+    { item: '/hosting/', frequency: 1 },
+    { item: '/download/counter/', frequency: 1 },
+    { item: '/asset.css', frequency: 1 }
+  ]
+]
+hch@localhost test % 
