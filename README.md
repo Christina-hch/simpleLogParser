@@ -33,9 +33,8 @@ Assume node installed
 
 const report = parseLog(path.resolve(__dirname,'data.log')).output;  
 const details = parseLog(path.resolve(__dirname,'data.log')).details;  
-const ret = parseLog(path.resolve(__dirname,'data.log'));
-
-const ret = parseLog(path.resolve(__dirname,'data.log'),'simple);
+const ret = parseLog(path.resolve(__dirname,'data.log'));    
+const ret = parseLog(path.resolve(__dirname,'data.log'),'simple);  
 const ret = parseLog(path.resolve(__dirname,'data.log'),'precise');
 
 
