@@ -6,8 +6,10 @@ parse http request log, and return brief report
 parseLog(fileName, option) is to parse a given log file containing HTTP requests and to report on its contents.
 
 Input:
+
   -fileName: a given log file to be parsed.
   -option: There are two choices, default is 'simple'.
+  
     'simple': just 3 itmes for top 3, discarding tied ones.    
     'precise': including tied ones, if some itmes are of the same level, number of selected items may be greater than 3;
 
@@ -29,6 +31,7 @@ const report = parseLog(path.resolve(__dirname,'data.log')).output;
 const details = parseLog(path.resolve(__dirname,'data.log')).details;  
 const ret = parseLog(path.resolve(__dirname,'data.log'));
 const ret = parseLog(path.resolve(__dirname,'data.log'),'simple);
+
 const ret = parseLog(path.resolve(__dirname,'data.log'),'precise');
 
 
