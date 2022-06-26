@@ -1,9 +1,9 @@
 # simpleLogParser
-parse http request log, and return brief report
+Parse a given log file containing HTTP requests and to report on its contents.
 
 ## Usage/API
 
-parseLog(fileName, option) is to parse a given log file containing HTTP requests and to report on its contents.
+parseLog(fileName, option)
 
 Input:
 
